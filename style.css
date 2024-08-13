@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    min-height: 100vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+
+}
+
+.header, .footer, .content1, .content2>div>div{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 4px solid #000;
+    background-color: #f4f4f4;
+}
+
+.main-container{
+    flex: 7;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.content2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    
+}
+
+.content2>div{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+@media screen and (max-width: 800px){
+    .main-container>div{
+        min-height: 400px;
+    }
+
+    .content1{
+        flex: 100%;
+    }
+
+    .header{
+        min-height: 90px;
+        
+    }
+
+    .footer{
+        min-height: 110px;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    .content2>div{
+        flex-direction: column;
+    }
+
+    .content2>div>div{
+        min-height: 200px;
+    }
+
+    
+}
+
+.footer {
+    min-height: 90px;
+    font-size: 14px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    background-color: #f2a918;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.content1 {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.content1 h2 {
+    margin-bottom: 10px;
+}
+
+.content1 p {
+    line-height: 1.6;
+}
+
+.content2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Subcontent styling */
+.subcontent1, .subcontent2 {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Box styling within subcontent */
+.stat-box, .notification-box {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.stat-box h4, .notification-box h4 {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.stat-box p, .notification-box p {
+    font-size: 18px;
+}
+
+
